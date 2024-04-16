@@ -2,7 +2,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
 
@@ -92,7 +92,7 @@ nav ul li a:hover::after {
     font-size: 60px;
 }
 
-.header-text h1 span{
+.header-text h1 span {
     color: cadetblue;
     text-shadow: 2px 2px black;
 }
@@ -121,12 +121,13 @@ nav ul li a:hover::after {
 
 .about-col-1 img {
     width: 100%;
-    border-radius: 50px;;
+    border-radius: 50px;
+    ;
 }
 
 .about-col-2 {
     flex-basis: 60%;
-    color: grey;
+    color: white;
 }
 
 /* Subtitle Style */
@@ -170,18 +171,34 @@ nav ul li a:hover::after {
 }
 
 /* Tab Contents Styles */
-.tab-contents ul li {
-    list-style: none;
-    margin: 10px 0;
-}
-
-.tab-contents ul li span{
-    color: cadetblue;
-    font-size: 14px;;
-}
-
 .tab-contents {
     display: none
+}
+
+.tab-contents ul .title,
+.tab-contents .title {
+    list-style: none;
+}
+
+.tab-contents ul li {
+    margin: 10px 0;
+    position: relative;
+}
+
+.tab-contents ul li span {
+    color: cadetblue;
+    font-size: 21px;
+}
+
+.date {
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.tab-contents ul li .description {
+    padding-left: 20px;
 }
 
 .tab-contents.active-tab {
@@ -191,6 +208,11 @@ nav ul li a:hover::after {
 /* Portfolio Section */
 #portfolio {
     padding: 50px 0;
+}
+
+.degreeTitle {
+    color: cadetblue;
+    font-size: 16px;
 }
 
 /* Portfolio Work List Styles */
@@ -210,7 +232,7 @@ nav ul li a:hover::after {
 
 .work img {
     width: 100%;
-    border-radius:  10px;
+    border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
@@ -260,7 +282,7 @@ nav ul li a:hover::after {
     transform: scale(1.1);
 }
 
-.work:hover .layer{
+.work:hover .layer {
     height: 100%;
 }
 
@@ -335,7 +357,8 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     border: 0;
     outline: none;
@@ -380,13 +403,16 @@ nav .fas {
     #header {
         background-image: url(public/background-smaller.png);
     }
+
     .header-text {
         margin-top: 100%;
         font-size: 16px;
     }
+
     .header-text h1 {
         font-size: 30px;
     }
+
     nav .fas {
         display: block;
         font-size: 25px;
@@ -423,7 +449,8 @@ nav .fas {
         font-size: 40px;
     }
 
-    .about-col-1, .about-col-2 {
+    .about-col-1,
+    .about-col-2 {
         flex-basis: 100%;
     }
 
@@ -440,12 +467,18 @@ nav .fas {
         margin-right: 20px;
     }
 
-    .contact-left, .contact-right {
+    .contact-left,
+    .contact-right {
         flex-basis: 100%;
     }
 
     .copyright {
         font-size: 14px;
+    }
+
+    .date {
+        position: unset;
+        margin-top: 10px;
     }
 }
 

@@ -2,293 +2,383 @@
 
 <html lang="en">
 
-    <!-- HEAD SECTION -->
-    <head>
-        <!-- Meta & Link Tags -->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Curtis's Personal Portfolio</title>
+<!-- HEAD SECTION -->
 
-        <!-- Link to External Stylesheet -->
-        <link rel="stylesheet" href="styles.css">
+<head>
+    <!-- Meta & Link Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curtis's Personal Portfolio</title>
 
-        <!-- Font Awesome Kit for Icons -->
-        <script src="https://kit.fontawesome.com/346b83c81b.js" crossorigin="anonymous"></script>
-    </head>
+    <!-- Link to External Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
 
-    <!-- BODY SECTION -->
-    <body>
-        <!-- HEADER -->
-        <div id="header">
-             <!-- Navigation Menu -->
-            <div class="container">
-                <!-- Logo & Menu Items -->
-                <nav>
-                    <!-- Navigation Links -->
-                    <ul id="menu">
-                        <img src="public/logo_2.png" alt="Logo" class="logo">
-                        <li><a href="#header">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+    <!-- Font Awesome Kit for Icons -->
+    <script src="https://kit.fontawesome.com/346b83c81b.js" crossorigin="anonymous"></script>
+</head>
 
-                        <!-- Close Menu Icon -->
-                        <i class="fas fa-times" onclick="closeMenu()"></i>
-                    </ul>
+<!-- BODY SECTION -->
 
-                    <!-- Open Menu Icon -->
-                    <i class="fas fa-bars" onclick="toggleMenu()"></i>
-                </nav>
+<body>
+    <!-- HEADER -->
+    <div id="header">
+        <!-- Navigation Menu -->
+        <div class="container">
+            <!-- Logo & Menu Items -->
+            <nav>
+                <!-- Navigation Links -->
+                <ul id="menu">
+                    <img src="public/logo_2.png" alt="Logo" class="logo">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
 
-                <!-- Header Text -->
-                <div class="header-text">
-                    <p style="color: lightgray;">Hello!</p>
-                    <h1>I'm <span>Curtis Kokuloku</span><br>Computer Science Student</h1>
-                    <p style="color: lightgray;">University of Minnesota, College of Science and Engineering</p>
+                    <!-- Close Menu Icon -->
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+
+                <!-- Open Menu Icon -->
+                <i class="fas fa-bars" onclick="toggleMenu()"></i>
+            </nav>
+
+            <!-- Header Text -->
+            <div class="header-text">
+                <p style="color: lightgray;">Hello!</p>
+                <h1>I'm <span>Curtis Kokuloku</span><br>Computer Science Student</h1>
+                <p style="color: lightgray;">University of Minnesota, College of Science and Engineering</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div id="about">
+        <div class="container">
+
+            <!-- About Content -->
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="public/curtis_2.jpeg" alt="Photo of Me">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <!-- Personal Introduction -->
+                    <p>
+                        I'm a computer science student at the University of Minnesota with proficiency in Java, C/C++,
+                        Python, HTML/CSS, JavaScript, SQL, and TypeScript. As a teaching assistant, I've honed
+                        communication skills and mentored peers. Eager to apply my academic knowledge professionally, I
+                        bring leadership and analytical thinking. Currently gaining hands-on experience with a
+                        university rocket team, contributing to telemetry systems. Passionate about innovative
+                        solutions, I bring creativity and a user-centric focus to contribute to groundbreaking digital
+                        products on your team.
+                    </p>
+
+                    <!-- Tab Titles for Skills, Experience, and Education -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul class="title">
+                            <li><span>Programming Languages</span><br>C++, Java, Python, HTML/CSS, JavaScript, C, C#,
+                                SQL, TypeScript, Assembly, OCaml, PHP</li>
+                            <li><span>Frameworks</span><br>Node.js, React, NumPy, Angular, JUnit</li>
+                            <li><span>Tools</span><br>VS Code, MacOS, Git/Github, Unix, Linux, Windows, MySQL,
+                                PostgreSQL</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li class="title"><span>Computer Science Teaching Assistant</span>
+                                <p>UMN CS&E Department, Minneapolis, MN
+                                <p class="date">Sept 2022 - Present</p>
+                                </p>
+                                <ul class="description">
+                                    <li>Led lab sessions for 50+ students on topics like algorithms, data structures,
+                                        and machine architecture</li>
+                                    <li>Provided 1-on-1 coding help during office hours, enhancing debugging and
+                                        problem-solving skills</li>
+                                    <li style="list-style: none; color: lightgray;">Courses: Machine Architecture (C),
+                                        Algorithms & Data Structure (Java), Intro to
+                                        Programming (Python)</li>
+                                </ul>
+                            </li>
+                            <li class="title"><span>Software Developer</span>
+                                <p>UMN Rocket Team (Avionics Software Development Team), Minneapolis,
+                                    MN
+                                <p class="date">Sept 2023 - Mar 2024</p>
+                                </p>
+                                <ul class="description">
+                                    <li>Collaborated with a team of 10+ developers to create a custom ground station
+                                        desktop application that can
+                                        receive, process, visualize, and store live telemetry from a rocket</li>
+                                    <li style="list-style: none; color: lightgray;">Technologies: TypeScript, Tauri,
+                                        HTML/CSS, VS Code, Git</li>
+                                </ul>
+                            </li>
+                            <li class="title"><span>Research Assistant</span>
+                                <p>Prof. Junaed Sattar IRV Lab, Minneapolis, MN
+                                <p class="date">Sept 2022 - Feb 2023</p>
+                                </p>
+                                <ul class="description">
+                                    <li>Collaborated closely with graduate research assistants, providing valuable
+                                        support in their ongoing projects and
+                                        initiatives, under the guidance of Professor Junaed Sattar</li>
+                                    <li>Assisted in designing and conducting experiments, collecting and analyzing data,
+                                        and interpreting research
+                                        findings</li>
+                                </ul>
+                            </li>
+                            <li class="title"><span>Embedded Software Engineer</span>
+                                <p>UMN Small Satellite Research Lab, Minneapolis, MN
+                                <p class="date">Sept 2021 - Feb 2023</p>
+                                </p>
+                                <ul class="description">
+                                    <li>Implemented ROS-based device drivers and protocols for cube satellite sensors
+                                        and actuators</li>
+                                    <li>Integrated satellite data pipelines, enhancing team workflow and reducing
+                                        duplication</li>
+                                    <li style="list-style: none; color: lightgray;">Technologies: C++, Git, Google Test,
+                                        GitHub, Python</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li class="title"><span>Bachelor of Science, Computer Science</span>
+                                <p class="schoolName">University of Minnesota-Twin Cities,
+                                    College of Science and Engineering
+                                <p class="date">Expected December 2024</p>
+                                </p>
+                                <br>
+                                <p class="coursework" style="list-style: none; color: lightgray;">Related Coursework:
+                                    Software Eng. I, User Interface Dsgn.,
+                                    Algorithm & Data
+                                    Str.,
+                                    Internet and Web Programming, Program Design &
+                                    Development, Operating Systems, Machine Architecture, AI, Database Systems,
+                                    Functional
+                                    Programming</p>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <!-- ABOUT SECTION -->
-        <div id="about">
-            <div class="container">
+    <!-- PORTFOLIO PROJECTS SECTION -->
+    <div id="portfolio">
+        <div class="container">
+            <!-- Portfolio Header -->
+            <h1 class="subtitle">Projects</h1>
+            <div class="work-list">
 
-                <!-- About Content -->
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="public/curtis_2.jpeg" alt="Photo of Me">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="subtitle">About Me</h1>
-                        <!-- Personal Introduction -->
-                        <p>
-                            I'm a computer science student at the University of Minnesota with proficiency in Java, C/C++, Python, HTML/CSS, JavaScript, SQL, and TypeScript. As a teaching assistant, I've honed communication skills and mentored peers. Eager to apply my academic knowledge professionally, I bring leadership and analytical thinking. Currently gaining hands-on experience with a university rocket team, contributing to telemetry systems. Passionate about innovative solutions, I bring creativity and a user-centric focus to contribute to groundbreaking digital products on your team.
+                <!-- Snake Game -->
+                <div class="work">
+                    <img src="public/snake.jpeg" alt="Snake Game">
+                    <div class="layer">
+                        <h3>Snake Game</h3>
+
+                        <!-- Snake Game Project Description -->
+                        <p>Classic snake game recreated in Python using the Turtle graphics library. Demonstrates
+                            proficiency in object-oriented programming, game development, and user interface design.
+                            Blend of nostalgia and modern techniques for an engaging and educational gaming experience.
                         </p>
 
-                        <!-- Tab Titles for Skills, Experience, and Education -->
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                            <p class="tab-links" onclick="openTab('education')">Education</p>
-                        </div>
-
-                        <!-- Skills -->
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Programming Languages</span><br>C++, Java, Python, HTML/CSS, JavaScript, C, C#, SQL, TypeScript, Assembly, OCaml, PHP</li>
-                                <li><span>Frameworks</span><br>Node.js, React, NumPy, Angular, JUnit</li>
-                                <li><span>Tools</span><br>VS Code, MacOS, Git/Github, Unix, Linux, Windows, MySQL, PostgreSQL</li>
-                            </ul>
-                        </div>
-
-                        <!-- Experience -->
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>Sept 2022 - Present</span><br>Computer Science Teaching Assistant, University of Minnesota</li>
-                                <li><span>Sept 2023 - Mar 2024</span><br>Software Developer, UMN Rocket Team (Avionics)</li>
-                                <li><span>Sept 2022 - Feb 2023</span><br>Undergraduate Research Assistant, University of Minnesota</li>
-                                <li><span>Sept 2021 - Feb 2023</span><br>Embedded Software Engineer, UMN Small Satellite Research Lab</li>
-                            </ul>
-                        </div>
-
-                        <!-- Education -->
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2021 - 2024</span><br>BS @ University of Minnesota - Twin Cities</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- PORTFOLIO PROJECTS SECTION -->
-        <div id="portfolio">
-            <div class="container">
-                <!-- Portfolio Header -->
-                <h1 class="subtitle">Projects</h1>
-                <div class="work-list">
-
-                    <!-- Snake Game -->
-                    <div class="work">
-                        <img src="public/snake.jpeg" alt="Snake Game">
-                        <div class="layer">
-                            <h3>Snake Game</h3>
-
-                            <!-- Snake Game Project Description -->
-                            <p>Classic snake game recreated in Python using the Turtle graphics library. Demonstrates proficiency in object-oriented programming, game development, and user interface design. Blend of nostalgia and modern techniques for an engaging and educational gaming experience.</p>
-
-                            <!-- Link to Snake Game GitHub Repository -->
-                            <a href="https://github.com/curtiskokuloku/Snake-Game.git" target="_blank"><i class="fa-solid fa-link"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Tetris -->
-                    <div class="work">
-                        <img src="public/tetris.jpeg" alt="Tetris">
-                        <div class="layer">
-                            <h3>Tetris</h3>
-
-                            <!-- Tetris Project Description -->
-                            <p>Classic Tetris game created in Python using the Turtle graphics library. Aims to deliver a fun and interactive gaming experience. Demonstrates expertise in Python programming and graphical user interface design.</p>
-
-                            <!-- Link to Tetris GitHub Repository -->
-                            <a href="https://github.com/curtiskokuloku/Tetris.git" target="_blank"><i class="fa-solid fa-link"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Terminal Chess Master -->
-                    <div class="work">
-                        <img src="public/chess.webp" alt="Chess">
-                        <div class="layer">
-                            <h3>Terminal Chess Master</h3>
-
-                            <!-- Chess Project Description -->
-                            <p>C++ program enabling chess play in the terminal. Designed for simplicity and engagement, catering to players of all levels. Highlights object-oriented programming principles for a structured and modular chess environment.</p>
-
-                            <!-- Link to Chess GitHub Repository -->
-                            <a href="https://github.com/curtiskokuloku/Chess.git" target="_blank"><i class="fa-solid fa-link"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Maze Solver -->
-                    <div class="work">
-                        <img src="public/maze.png" alt="Maze Solver">
-                        <div class="layer">
-                            <h3>Maze Solver</h3>
-
-                            <!-- Maze Solver Project Description -->
-                            <p>C++ application generating and solving mazes. A unique educational tool emphasizing maze algorithms, object-oriented programming, and key C++ concepts. Experience maze solving with elegance in C++.</p>
-
-                            <!-- Link to Maze Solver GitHub Repository -->
-                            <a href="https://github.com/curtiskokuloku/Maze.git" target="_blank"><i class="fa-solid fa-link"></i></a>
-                        </div>
+                        <!-- Link to Snake Game GitHub Repository -->
+                        <a href="https://github.com/curtiskokuloku/Snake-Game.git" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
                     </div>
                 </div>
 
-                <!-- Link to GitHub Repositories -->
-                <a href="https://github.com/curtiskokuloku?tab=repositories" target="_blank" class="btn">See more</a>
+                <!-- Tetris -->
+                <div class="work">
+                    <img src="public/tetris.jpeg" alt="Tetris">
+                    <div class="layer">
+                        <h3>Tetris</h3>
+
+                        <!-- Tetris Project Description -->
+                        <p>Classic Tetris game created in Python using the Turtle graphics library. Aims to deliver a
+                            fun and interactive gaming experience. Demonstrates expertise in Python programming and
+                            graphical user interface design.</p>
+
+                        <!-- Link to Tetris GitHub Repository -->
+                        <a href="https://github.com/curtiskokuloku/Tetris.git" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <!-- Terminal Chess Master -->
+                <div class="work">
+                    <img src="public/chess.webp" alt="Chess">
+                    <div class="layer">
+                        <h3>Terminal Chess Master</h3>
+
+                        <!-- Chess Project Description -->
+                        <p>C++ program enabling chess play in the terminal. Designed for simplicity and engagement,
+                            catering to players of all levels. Highlights object-oriented programming principles for a
+                            structured and modular chess environment.</p>
+
+                        <!-- Link to Chess GitHub Repository -->
+                        <a href="https://github.com/curtiskokuloku/Chess.git" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <!-- Maze Solver -->
+                <div class="work">
+                    <img src="public/maze.png" alt="Maze Solver">
+                    <div class="layer">
+                        <h3>Maze Solver</h3>
+
+                        <!-- Maze Solver Project Description -->
+                        <p>C++ application generating and solving mazes. A unique educational tool emphasizing maze
+                            algorithms, object-oriented programming, and key C++ concepts. Experience maze solving with
+                            elegance in C++.</p>
+
+                        <!-- Link to Maze Solver GitHub Repository -->
+                        <a href="https://github.com/curtiskokuloku/Maze.git" target="_blank"><i
+                                class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
             </div>
+
+            <!-- Link to GitHub Repositories -->
+            <a href="https://github.com/curtiskokuloku?tab=repositories" target="_blank" class="btn">See more</a>
         </div>
+    </div>
 
-        <!-- CONTACT SECTION -->
-        <div id="contact">
-            <div class="container">
-                <div class="row">
+    <!-- CONTACT SECTION -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
 
-                    <!-- Contact Information -->
-                    <div class="contact-left">
-                        <h1 class="subtitle">Contact Me</h1>
+                <!-- Contact Information -->
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
 
-                        <!-- Email and Phone Information -->
-                        <p><i class="fa-regular fa-envelope"></i> c.kokuloku01@yahoo.com</p>
-                        <!-- <p><i class="fa-solid fa-phone"></i> 612-513-1815</p> -->
+                    <!-- Email and Phone Information -->
+                    <p><i class="fa-regular fa-envelope"></i> c.kokuloku01@yahoo.com</p>
+                    <!-- <p><i class="fa-solid fa-phone"></i> 612-513-1815</p> -->
 
-                        <!-- Social Media Icons -->
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/curtis-kokuloku/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/curtiskokuloku" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.instagram.com/_curtisk_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        </div>
+                    <!-- Social Media Icons -->
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/curtis-kokuloku/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/curtiskokuloku" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/_curtisk_" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
 
-                        <!-- Download CV Button
+                    <!-- Download CV Button
                         <a href="public/kokuloku-curtis-resume.pdf" target="_blank" class="btn btn-2" download="">Download My CV</a> -->
-                    </div>
-
-                    <!-- Contact Form -->
-                    <div class="contact-right">
-
-                        <!-- Form for User Input -->
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="email" name="Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-
-                            <!-- Submit Button -->
-                            <button type="submit" class="btn btn-2">Submit</button>
-                        </form>
-
-                        <!-- Submission Message -->
-                        <span id="msg"></span>
-                    </div>
                 </div>
-            </div>
 
-            <!-- FOOTER -->
-            <div class="copyright">
-                <!-- Copyright Information -->
-                <p>Copyright © Curtis 2024. Made with <i class="fas fa-heart"></i>. All rights reserved.</p>
+                <!-- Contact Form -->
+                <div class="contact-right">
+
+                    <!-- Form for User Input -->
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+
+                    <!-- Submission Message -->
+                    <span id="msg"></span>
+                </div>
             </div>
         </div>
 
-        <!-- SCRIPT -->
-        <!-- Tab Switching Functionality -->
-        <script>
-            var tabLinks = document.getElementsByClassName('tab-links');
-            var tabContents = document.getElementsByClassName('tab-contents');
+        <!-- FOOTER -->
+        <div class="copyright">
+            <!-- Copyright Information -->
+            <p>Copyright © Curtis 2024. Made with <i class="fas fa-heart"></i>. All rights reserved.</p>
+        </div>
+    </div>
 
-            function openTab(tabName) {
-                // Remove 'active-link' class from all tab links
-                for(tabLink of tabLinks) {
-                    tabLink.classList.remove('active-link');
-                }
+    <!-- SCRIPT -->
+    <!-- Tab Switching Functionality -->
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
 
-                // Remove 'active-tab' class from all tab contents
-                for(tabContent of tabContents) {
-                    tabContent.classList.remove('active-tab');
-                }
-
-                // Add 'active-link' class to the clicked tab link
-                event.currentTarget.classList.add('active-link');
-
-                // Add 'active-tab' class to the corresponding tab content
-                document.getElementById(tabName).classList.add('active-tab');
-            }
-        </script>
-
-        <!-- Mobile Menu Opening and Closing Functionality -->
-        <script>
-            var sideMenu = document.getElementById('menu');
-
-            // Function to toggle the mobile menu
-            function toggleMenu() {
-                if (sideMenu.style.right === "0px") {
-                    sideMenu.style.right = "-120px";
-                } else {
-                    sideMenu.style.right = "0px";
-                }
+        function openTab(tabName) {
+            // Remove 'active-link' class from all tab links
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
             }
 
-            // Function to close the mobile menu
-            function closeMenu() {
+            // Remove 'active-tab' class from all tab contents
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+
+            // Add 'active-link' class to the clicked tab link
+            event.currentTarget.classList.add('active-link');
+
+            // Add 'active-tab' class to the corresponding tab content
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+    </script>
+
+    <!-- Mobile Menu Opening and Closing Functionality -->
+    <script>
+        var sideMenu = document.getElementById('menu');
+
+        // Function to toggle the mobile menu
+        function toggleMenu() {
+            if (sideMenu.style.right === "0px") {
                 sideMenu.style.right = "-120px";
+            } else {
+                sideMenu.style.right = "0px";
             }
-        </script>
+        }
 
-        <!-- Form Submission Functionality -->
-        <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbx80iZpZD62lJDIzkP90su7TYcozBuH7S2HZSgdZEOsw5VaZdvQ9J7nfW69uSLl2hOd/exec'
-            const form = document.forms['submit-to-google-sheet']
-            const msg = document.getElementById('msg')
+        // Function to close the mobile menu
+        function closeMenu() {
+            sideMenu.style.right = "-120px";
+        }
+    </script>
 
-            // Event listener for form submission
-            form.addEventListener('submit', e => {
-                e.preventDefault()
+    <!-- Form Submission Functionality -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx80iZpZD62lJDIzkP90su7TYcozBuH7S2HZSgdZEOsw5VaZdvQ9J7nfW69uSLl2hOd/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
 
-                // Fetch data to the specified scriptURL using the POST method
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        // Event listener for form submission
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+
+            // Fetch data to the specified scriptURL using the POST method
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
                     // Display success message in the 'msg' span
                     msg.innerHTML = "Message sent successfully!"
 
                     // Reset the form after a delay
-                    setTimeout(function() {
+                    setTimeout(function () {
                         msg.innerHTML = ""
                     }, 3000)
                     form.reset()
                 })
                 .catch(error => console.error('Error!', error.message))
-            })
-        </script>
-    </body>
+        })
+    </script>
+</body>
+
 </html>
